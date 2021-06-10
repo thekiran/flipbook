@@ -51,7 +51,60 @@
         #page006 {
             content: url("img/SalesBook-Final-06April2021-print_page-0006.jpg");
 
+        } 
+ 
+        @media(max-width: 1300px){
+                #magazine {
+                width: 88vw;
+                height: 90vh;
+                }
         }
+        
+        @media(max-width: 1000px){
+                #magazine {
+                width: 88vw;
+                height: 70vh;
+                }
+        }
+
+          @media(max-width: 900px){
+                #magazine {
+                width: 80vw;
+                height: 70vh;
+                }
+        }
+
+        @media(max-width: 800px){
+                #magazine {
+                width: 70vw;
+                height: 70vh;
+                }
+         }
+        @media(max-width: 576px){
+                #magazine {
+                width: 60vw;
+                height: 70vh;
+                }
+                
+        div.flip-control {
+            width: 95vw; 
+            margin: 0 auto; 
+            top: 60%;
+        }
+         }
+        @media(max-width: 500px){
+                #magazine {
+                width: 79vw;
+                height: 60vh;
+                } 
+         }
+        @media(max-width: 400px){
+                #magazine { 
+                height: 50vh;
+                }
+
+         }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -171,6 +224,9 @@
             e.preventDefault();
             oTurn.turn("next");
         });
+        $(window).bind('orientationchange', function (event) {
+        location.reload(true);
+         });
     </script>
 </body>
 
